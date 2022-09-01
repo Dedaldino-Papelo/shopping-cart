@@ -1,0 +1,15 @@
+.shopping-icon{
+    width: 24px;
+    height: 24px;
+}
+.cart-icon{
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-count{
+    position: absolute;
+    top: -3px;
+}
