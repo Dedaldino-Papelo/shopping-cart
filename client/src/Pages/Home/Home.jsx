@@ -1,22 +1,27 @@
 import React from 'react'
 import './home.style.css'
-import axios from 'axios'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Products from '../../Components/Product/Products'
+import {useSelector, useDispatch} from 'react-redux'
+import { product_actions } from '../../Redux/products/product.actions'
+import Loader from '../../Components/Loader'
 
 
 const Home = () => {
-    const [products, setProducts] = useState([])
 
-    useEffect(() => {
-        axios.get("http://localhost:4000/products")
-        .then(resp => {
-            setProducts(resp.data)
-        }).catch(err => console.log(err))
-    },[])
+  const dispatch = useDispatch()
+
+  const productsList = useSelector(state => state.products)
+  const {loading, products, error} = productsList
+
+  useEffect(() =>{
+    dispatch(product_actions())
+  },[dispatch])
 
   return (
     <div className='Home'>
+      {loading && <Loader />}
+      {error && <h2>{error}</h2>}
       <div className='home-container'>
       {
         products.map(prod => (
