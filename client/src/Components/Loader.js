@@ -5,12 +5,12 @@ const Loader = () => {
   return (
     <div>
       <Spinner 
-      animation="border"
+      animation="grow"
       variant='warning'
       role="status"
       style={{ 
-          width: '50px', 
-          height: '50px',
+          width: '40px', 
+          height: '40px',
           margin:'auto',
           display: 'block' }}
       >

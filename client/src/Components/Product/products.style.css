@@ -36,4 +36,8 @@
     font-size: 0.875em;
     text-transform: uppercase;
     font-weight: bold;
+    transition: all 1s;
+}
+.grid-item .btn-cart:hover{
+    background-color: #8b4e03;
 }

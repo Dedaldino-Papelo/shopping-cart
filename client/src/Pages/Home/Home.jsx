@@ -20,8 +20,10 @@ const Home = () => {
 
   return (
     <div className='Home'>
+
       {loading && <Loader />}
       {error && <h2>{error}</h2>}
+      
       <div className='home-container'>
       {
         products.map(prod => (
