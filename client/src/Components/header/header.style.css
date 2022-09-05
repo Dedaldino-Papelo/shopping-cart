@@ -30,5 +30,6 @@
     margin-bottom: 20px;
 }
 .left .content p{
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 27px;
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import './checkout.style.css'
 import trash from '../../assets/trash.svg'
+import { useDispatch } from 'react-redux'
+import { removeCartItem } from '../../Redux/cart/cart.actions'
 
 const CheckoutItem = ({cartItem}) => {
     const {name,price,quantity} = cartItem
+
+    const dispatch = useDispatch()
   return (
     <div className='checkout-item'>
     <span className='name'>{name}</span>
@@ -14,7 +18,7 @@ const CheckoutItem = ({cartItem}) => {
     </span>
     <span className='price'>{price}</span>
     <div className='remove-button'>
-      <img src={trash} alt='trash' />
+      <img src={trash} alt='trash' onClick={() => dispatch(removeCartItem(cartItem)) } />
     </div>
 </div>
   )
