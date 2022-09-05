@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.right{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width: 30vw;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.content .up{
+    color: rgb(219, 172, 44);
+}
+
+.left .content h1{
+    font-weight: bold;
+    line-height: 58.5px;
+    margin-bottom: 20px;
+}
+.left .content p{
+    line-height: 24px;
+}

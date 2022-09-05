@@ -1,0 +1,29 @@
+.checkout-item{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgrey;
+    align-items: center;
+}
+
+.name,
+    .quantity,
+    .price {
+      width: 23%;
+    }
+
+.quantity {
+      display: flex;
+}
+
+.arrow, .remove-button{
+        cursor: pointer;
+}
+
+.value{
+        margin: 0 10px;
+}
+
+

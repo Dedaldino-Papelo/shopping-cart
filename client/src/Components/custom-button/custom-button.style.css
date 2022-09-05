@@ -1,0 +1,16 @@
+.custom-button{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(219, 172, 44);
+    color: #fff;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.custom-button:hover{
+    background-color: rgb(174, 131, 12);
+}
