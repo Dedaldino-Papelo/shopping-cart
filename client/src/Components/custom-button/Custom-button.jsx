@@ -1,10 +1,10 @@
 import React from 'react'
 import './custom-button.style.css'
 
-const CustomButton = ({children, ...props}) => {
+const CustomButton = ({children, loading, ...props}) => {
   return (
     <button className='custom-button' {...props}>
-        {children}
+        {loading ? 'Loading': children}
     </button>
   )
 }

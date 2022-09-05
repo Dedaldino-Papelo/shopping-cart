@@ -4,7 +4,7 @@
     width: 80%;
     margin: 0 auto;
 }
-.user-form, .cart-items{
+.user-form, .cart-items,.payment-method{
     padding: 100px;
 }
 

@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const Products = require("./Routes/Products")
+const Orders = require('./Routes/Order')
 const mongoose = require('mongoose');
 const seedDb = require("./Seed")
 const cors = require("cors")
@@ -21,6 +22,7 @@ app.get("/", (req, res) => {
 })
 
 app.use(Products)
+app.use(Orders)
 
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => {

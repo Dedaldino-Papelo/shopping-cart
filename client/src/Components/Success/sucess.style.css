@@ -1,0 +1,14 @@
+.success{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.success h1{
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: rgb(219, 172, 44);
+}
