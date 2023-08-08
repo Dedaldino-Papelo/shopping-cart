@@ -62,16 +62,16 @@ const data = [
 ]
 
 const seedDB = async () => {
-    //delete products
     const removeProducts = await Products.deleteMany()
+
     if(removeProducts){
         console.log("Removed")
     } else{
         console.log("Error Removing Products")
     }
 
-    //add products
     const createProducts = await Products.create(data)
+    
     if(createProducts){
         console.log("inserted")
     } else {
